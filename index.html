@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gåte sp!ll</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/spørsmåltegn.png">
+</head>
+<body>
+    <header>
+        <div class="header-div1">
+            <img src="./images/spørsmåltegn.png" alt="question mark image" class="header-image">
+            <h1 id="header-text">Gåte sp<span class="red">!</span>ll</h1>
+            <img src="./images/spørsmåltegn.png" alt="question mark image" class="header-image">
+        </div>
+        <center><hr id="header-split-main"></center>
+    </header>
+
+    <main>
+        <div class="gåte-div">
+            <h1 id="gåte" style="font-size: 28px;">{--gåte--}</h1>
+            <div style="display: block; margin-left: 10px;">
+                <button id="reset-points" class="buttons-sc">Reset poeng</button>
+                <h3 id="poeng-text">Poeng sum: <span id="poeng">0</span></h3>
+            </div>
+        </div>
+        <div id="user-inter">
+            <div class="answer-input">
+                <input type="text" id="gåte-input" placeholder="Skriv inn svaret ditt">
+            </div>
+            <p class="right better-b hidden">RIKTIG.</p>
+            <p class="wrong better-b hidden">FEIL, det er: "<span id="wrong"></span>".</p>
+            <div class="skip-check">
+                <button class="buttons-sc" id="skip">Skip</button>
+                <button class="buttons-sc" id="sjekk">Sjekk svar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Laget av: Magne og Andreas</p>
+        <script src="./script.js"></script>
+    </footer>
+</body>
+</html>
